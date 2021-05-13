@@ -33,7 +33,8 @@ class Main {
         }
           if (Character.isDigit(c)) {
             int digit = Character.getNumericValue(c) + rotationFactor;
-            output.append(Character.digit());
+            String s = String.valueOf(digit);
+            output.append(s.charAt(0));
           }
         if (Character.isUpperCase(c)) {
           int capsAlphaIdx = new String(capsAlpha).indexOf(c);
