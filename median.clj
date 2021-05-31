@@ -9,3 +9,8 @@
       (let [first-val (last (take halfway x))
             second-val (first (nthnext x halfway))]
         (int (/ (+ first-val second-val) 2))))))
+
+(defn median-stream [x]
+  (for [xs x
+        :let [result []]]
+      (cons (median (take (+ 1 (.indexOf x xs)) x)) result)))
