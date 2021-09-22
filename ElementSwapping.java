@@ -44,6 +44,6 @@ public class ElementSwapping {
     }
 
     public static void main(String[] args) {
-        new MatchingPairs().run();
+        new ElementSwapping().run();
     }
 }
